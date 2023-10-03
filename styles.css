@@ -1,0 +1,599 @@
+/* **********************  This is css style file code by mohammed alatige   ************************* */
+
+/* Starts Main Rouls */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: Ubuntu;
+}
+
+:root {
+    --mian-color: #00428d;
+    --light-blue-color: #0058bd;
+    --bg-main-color: #122131;
+    --bg-dark-color: #0b1520;
+    --white-color: #ffffff;
+    --rgba-blue: #0057c86c;
+}
+
+a {
+    text-decoration-line: none !important;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--bg-dark-color);
+    color: var(--white-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url("../fonts/Ubuntu.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* End Font */
+/* End main rouls */
+
+
+
+/* Strat header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    background: var(--bg-main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0 0 1rem var(--bg-dark-color);
+}
+
+.header.stick {
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.2);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    cursor: default;
+    color: var(--white-color);
+}
+
+.navbar a {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    margin-left: 4rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--mian-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--white-color);
+    display: none;
+}
+
+/* End header */
+
+/* Start Home desing */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+span {
+    color: var(--mian-color);
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.0;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--mian-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--mian-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s;
+}
+
+.social-media a:hover {
+    background: var(--mian-color);
+    color: var(--light-blue-color);
+    box-shadow: 0 0 1rem var(--mian-color);
+}
+
+.home-img img {
+    height: 35vw;
+    animation: floatingImge 4s ease-in-out infinite;
+}
+
+@keyframes floatingImge {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: var(--mian-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--light-blue-color);
+    font-size: 1.6rem;
+    color: var(--bg-dark-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+/* End Home desing */
+
+
+/* Start About Me  */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--bg-main-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+
+}
+
+/* End About Me  */
+
+/* Start services */
+.services h2 {
+    margin-bottom: 5rem;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.services-container .services-box {
+    flex: 1 1 20rem;
+    background-color: var(--bg-main-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-dark-color);
+    transition: 0.5s ease;
+}
+
+.services-container .services-box:hover {
+    border-color: var(--mian-color);
+    transform: scale(1.02);
+}
+
+.services-box i {
+    font-size: 7rem;
+    color: var(--mian-color);
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+
+}
+
+/* End services */
+
+/* Strat protfolio */
+.protfolio {
+    background-color: var(--bg-main-color);
+}
+
+.protfolio h2 {
+    margin-bottom: 4rem;
+}
+
+.protfolio-conatiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.protfolio-conatiner .protfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-dark-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.protfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.protfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.protfolio-box .protfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--mian-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.protfolio-box:hover .protfolio-layer {
+    transform: translateY(0);
+}
+
+.protfolio-layer h4 {
+    font-size: 3rem;
+}
+
+.protfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.protfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--white-color);
+    border-radius: 50%;
+}
+
+.protfolio-layer a i {
+    font-size: 2rem;
+    color: var(--bg-dark-color);
+}
+
+/* End protfolio */
+
+/* Start contact me */
+.countact h2 {
+    margin-bottom: 3rem;
+}
+
+.countact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+.countact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.countact form .input-box .num1,
+.num2,
+.countact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--white-color);
+    background: var(--bg-main-color);
+    border-radius: 2.8rem;
+    margin: .7rem 0;
+}
+
+.countact form .input-box .num1,
+.num2 {
+    width: 49%;
+}
+
+.countact form textarea {
+    resize: none;
+}
+
+.countact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/* End contact me */
+
+/* Start footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--bg-main-color);
+}
+
+.footer-text p {
+    font-size: 1.5rem;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background: var(--mian-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--mian-color);
+}
+
+.footer-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-main-color);
+}
+
+/* End footer */
+
+/* MEDIA QUERY */
+
+/*Smartphones and tablets screen*/
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/*Medium screen*/
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .protfolio {
+        margin-bottom: 7rem;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+/*Small screen*/
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-dark-color);
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar a {
+        display: block !important;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        height: 70vw;
+        margin-top: 4rem;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
+        width: 70vw;
+        height: 70vw;
+        margin-top: 4rem;
+
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .protfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .protfolio-conatiner {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 617px) {
+    .protfolio-conatiner {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .contact form .input-box .num1 .num2 {
+        width: 100%;
+    }
+}
+
+@media(max-width: 365px) {
+    .home-img img {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .about-img img {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+}
+
+@media (max-width: 340px) {
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 1rem;
+
+    }
+}
+
+/* MEDIA QUERY */
